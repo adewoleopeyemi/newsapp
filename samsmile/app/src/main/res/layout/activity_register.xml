@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@color/colormainbluetheme">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@color/colormainbluetheme"
+        android:id="@+id/FirstRelLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Create"
+            android:textColor="@color/colorwhite"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/createtv"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/createtv"
+            android:text="Account"
+            android:textColor="@color/colorwhite"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/FirstRelLayout"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/rounded_top_corner">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:id="@+id/emailLinearLayout"
+            android:layout_marginTop="50dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_email"
+                    android:layout_marginTop="5dp"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    >
+                    <EditText
+                        android:id="@+id/emailEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:hint="Email"
+                        android:textColorHint="@color/colorgrey"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/colormainbluetheme"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@id/emailLinearLayout"
+            android:id="@+id/passwordLinearLayout">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_password" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    app:passwordToggleEnabled="true"
+                    >
+                    <EditText
+                        android:id="@+id/passwordEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:hint="password"
+                        android:textColorHint="@color/colorgrey"
+                        android:inputType="textPassword"
+                        android:textColor="@color/colormainbluetheme"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardVew_register_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@id/passwordLinearLayout"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="5dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colormainbluetheme"
+                android:text="Sign Up"
+                android:textColor="@color/colorwhite"
+                android:id="@+id/register_btn"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@id/cardVew_register_btn"
+            android:layout_marginTop="15dp"
+            android:id="@+id/lineRelLayout"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="or"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/cardVew_register_btn"
+                android:layout_marginTop="20dp"
+                android:id="@+id/orTV"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardVew_nlogin_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/orTV"
+            android:layout_marginBottom="150dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:padding="5dp">
+
+            <Button
+                android:id="@+id/login_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_btn"
+                android:text="Log In"
+                android:textColor="@color/colormainbluetheme" />
+        </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+
+</RelativeLayout>

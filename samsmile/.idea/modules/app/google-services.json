@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "716868837968",
+    "firebase_url": "https://sam-smile.firebaseio.com",
+    "project_id": "sam-smile",
+    "storage_bucket": "sam-smile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:716868837968:android:925a197733af2e7f41e755",
+        "android_client_info": {
+          "package_name": "com.example.samsmile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "716868837968-t81am86k4nn63bth62irtvepea0t4ujk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.samsmile",
+            "certificate_hash": "1737fc215b6b37933481173db62911348a11f804"
+          }
+        },
+        {
+          "client_id": "716868837968-mpe3ma0plsclmr5hjhhd3irtn6l7f54u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCa56nH-mr04dLNO2y52s_C8v4LKTqo0VU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "716868837968-mpe3ma0plsclmr5hjhhd3irtn6l7f54u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
